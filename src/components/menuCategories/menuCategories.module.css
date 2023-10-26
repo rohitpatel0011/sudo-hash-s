@@ -1,0 +1,55 @@
+.categoryList {
+  margin-top: 35px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 18px;
+  border: px solid rgba(255, 255, 255, .25);
+  border-radius: 20px;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, .25),
+    /* rgba(255, 255, 255, .75), 70%,  */
+    rgba(255, 255, 255, .10)
+  );
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+
+  backdrop-filter: blur(15px);
+}
+.categoryItem {
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-size: 14px;
+  width: max-content;
+  transition: all ease .3s;
+  color: var(--bg);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+}
+.categoryItem:hover{
+    opacity:1.6;
+    color: aliceblue;
+    
+    
+}
+.fashion {
+  background-color: rgb(115, 189, 189);
+}
+
+.culture {
+  background-color: rgb(163, 85, 85);
+}
+.coding {
+  background-color: rgb(166, 115, 214);
+}
+
+.travel {
+  background-color: #4b8ad1;
+}
+
+.food {
+  background-color: yellowgreen;
+}
+.style {
+  background-color: palevioletred;
+}

@@ -1,0 +1,12 @@
+
+.title{
+    background-color: rgba(34, 51, 68, 0.836);
+    color:white;
+    padding: 5px 10px;
+    text-align: center;
+
+}
+.content{
+  display: flex;
+  gap: 50px ;
+}

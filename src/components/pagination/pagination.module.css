@@ -1,0 +1,24 @@
+.container {
+display: flex;
+justify-content:space-between;
+
+
+}
+.button{
+
+    /* padding: 10px 25px;
+    border-radius: 10px;
+    font-size: 14px;
+    width: max-content;
+    transition: all ease .3s;
+    
+    border: none; */
+    width:100px;
+    border:none;
+    padding:16px;
+    background-color: var(--mainColor);
+    color: white;
+    border-radius: 10px;
+}
+
+ 

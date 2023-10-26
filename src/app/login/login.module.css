@@ -1,0 +1,191 @@
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50rem;
+    min-height: 80vh;
+    width: 100%;
+    padding: 0 2rem;
+    margin: 0 auto;
+  }
+  
+  .ion-logo-apple {
+    font-size: 1.65rem;
+    line-height: inherit;
+    margin-right: 0.5rem;
+    color: var(--color-black);
+  }
+  .ion-logo-google {
+    font-size: 1.65rem;
+    line-height: inherit;
+    margin-right: 0.5rem;
+    color: var(--color-red);
+  }
+  .ion-logo-facebook {
+    font-size: 1.65rem;
+    line-height: inherit;
+    margin-right: 0.5rem;
+    color: var(--color-blue);
+  }
+  
+  .text {
+    font-family: inherit;
+    line-height: inherit;
+    text-transform: unset;
+    text-rendering: optimizeLegibility;
+  }
+  .textlarge {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--textColor);
+  }
+  .textnormal {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--softTextColor);
+  }
+  .textlinks {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-blue);
+  }
+  .textlinks:hover {
+    text-decoration: underline;
+  }
+  
+  .wrapper {
+    max-width: 28rem;
+    width: 100%;
+    margin: 2rem auto;
+    padding: 2rem 2.5rem;
+    border: none;
+    outline: none;
+    border-radius:10px;
+    color: var(--textColor);
+    background: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, .25),
+        /* rgba(255, 255, 255, .75), 70%,  */
+        rgba(255, 255, 255, .10)
+      );
+    box-shadow: var(--shadow-large);
+  }
+ .form {
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+  }
+  .inputcontrol {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+  }
+ .inputfield {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: inherit;
+    width: 100%;
+    height: auto;
+    padding: 0.75rem 1.25rem;
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+ color: var(--textColor);
+    background: var(--color-light);
+    text-transform: unset;
+    text-rendering: optimizeLegibility;
+  }
+ .inputsubmit {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: inherit;
+    cursor: pointer;
+    min-width: 40%;
+    height: auto;
+    padding: 0.65rem 1.25rem;
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    color: var(--color-white);
+    background: var(--color-blue);
+    box-shadow: var(--shadow-medium);
+    text-transform: capitalize;
+    text-rendering: optimizeLegibility;
+  }
+ .striped {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+  }
+ .stripedline {
+    flex: auto;
+    flex-basis: auto;
+    border: none;
+    outline: none;
+    height: 2px;
+    background: var(--color-grayish);
+  }
+  .stripedtext {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: inherit;
+    color: var(--textColor);
+    margin: 0 1rem;
+  }
+ .methodcontrol {
+    margin-bottom: 1rem;
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 500;
+    line-height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 0.5rem 1.25rem;
+    outline: none;
+    border: 2px solid var(--color-grayish);
+    border-radius: 2rem;
+    color:rgb(255, 255, 255);
+    background: var(--color-light);
+    text-transform: capitalize;
+    text-rendering: optimizeLegibility;
+    transition: all 0.35s ease;
+  }
+  .methodcontrol:first-child{
+    background-color: rgba(177, 50, 18, 0.904);
+  }
+  .methodcontrol:nth-child(2){
+    background-color: rgba(42, 114, 223, 0.877);
+  }
+  .methodcontrol:nth-child(3){
+    background-color: rgba(0, 0, 0, 0.781);
+  }
+  .methodaction{
+    font-size: 1.5rem;
+    margin-right: 8px;
+
+    color: rgb(233, 233, 233);
+  }
+
+
+  .methodaction:hover {
+    background: gray;
+  }
+
+  @media screen and (max-width:1280px) {
+    .container{
+           padding: 0;
+    }
+    
+  }

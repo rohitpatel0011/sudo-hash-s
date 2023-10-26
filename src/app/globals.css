@@ -1,0 +1,141 @@
+:root {
+    --bg: rgb(255, 255, 255);
+    --textColor: black;
+    --mainColor: #7dbb01;
+    --softBg: #f0f0f0;
+    --softTextColor: #626262;
+    --firstColor: #44AB96;
+    --SecondColor: #FFB017;
+    --ThirdColor: #E53855;
+    --FourthColor: #2196f3;
+    --FifthColor: #da774a;
+    /* input field color variable */
+    --color-white: #ffffff;
+    --color-light: #f1f5f9;
+    --color-black: #121212;
+    --color-night: #001632;
+    --color-red: #f44336;
+    --color-blue: #1a73e8;
+    --color-gray: #80868b;
+    --color-grayish: #dadce0;
+    --shadow-normal: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    --shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-large: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.dark {
+    /* --bg:#0f172a; */
+    --bg: rgb(21, 20, 20);
+    /* --bg:#151414; */
+    --textColor: #ddd;
+    /* --softBg:#151e33; */
+    /* --softBg:#151414; */
+    --softTextColor: #a6a6a6;
+    --hoverShadow: 0 0 10px 1px rgba(230, 230, 230, 0.39);
+}
+
+.light {
+    --bg: #E9E8DE;
+    --textColor: black;
+    --softBg: #f0f0f0;
+    --softTextColor: #626262;
+    --hoverShadow: 0 0 10px 1px rgba(56, 56, 56, 0.5);
+}
+
+.container {
+    min-height: 100vh;
+    background-color: var(--bg);
+    backdrop-filter: blur(15px);
+    color: var(--textColor);
+    transition: all ease .3s;
+}
+
+.wrapper {
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color:rebeccapurple; */
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+
+/* Making-responsive container size  while shrink */
+
+@media screen and (max-width:1536px) {
+    .wrapper {
+        max-width: 1366px;
+        padding-left: 40px;
+        padding-right: 40 px;
+    }
+}
+
+@media screen and (max-width:1286px) {
+    .wrapper {
+        max-width: 1024px;
+        padding-left: 40px;
+        padding-right: 40 px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .wrapper {
+        max-width: 768px;
+        padding-left: 40px;
+        padding-right: 40 px;
+    }
+}
+
+@media screen and (max-width:740px) {
+    .wrapper {
+        max-width: 475px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .wrapper {
+        max-width: 400px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width:520px) {
+    .wrapper {
+        max-width: 475px;
+        /* padding-left: 10px;
+      padding-right: 10px;
+     */
+    }
+}
+
+.ql-container {
+    font-size: 28px !important;
+}
+
+.quill>.ql-container>.ql-editor.ql-blank::before {
+    color: #b3b3b1;
+}
+
+.ql-editor {
+    margin-top: 48px;
+}

@@ -1,0 +1,107 @@
+.container {
+  font-family: "Ubuntu", sans-serif;
+}
+.title {
+  margin: 50px 0px;
+  font-size: 42px;
+}
+.categories {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  flex-wrap: wrap;
+  /* padding: 1.3rem; */
+
+  /* margin: -50px; */
+}
+/* .category.coding{
+  background: #57c4ff31;
+}
+.category.culture{
+  background: #57c4ff31;
+}
+.category.fashion{
+  background: #57c4ff31;
+}
+.category.food{
+  background: #57c4ff31;
+}
+.category.travel{
+  background: #57c4ff31;
+}
+.category.style{
+  background: #57c4ff31;
+} */
+.category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  font-size: 18px;
+  text-transform: capitalize;
+  padding: 12px 32px;
+  border-radius:20px;
+  transition: all 0.2s ease-in-out;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, .25),
+    /* rgba(255, 255, 255, .75), 70%,  */
+    rgba(255, 255, 255, .10)
+  );
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+
+ 
+  background-color: var(--bg);
+}
+.category:hover {
+  box-shadow:
+var(--hoverShadow);
+
+}
+
+@media screen and (max-width: 1284px) {
+  .title {
+    font-size: 28px;
+  }
+  .category {
+    padding: 22px 55px;
+    gap: 40px;
+
+  }
+  .categories {
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .title {
+    font-size: 26px;
+  }
+  .category {
+    padding: 22px 55px;
+    gap: 40px;
+  }
+
+}
+@media screen and (max-width: 755px) {
+  .title {
+    font-size: 26px;
+  }
+  .category {
+    padding: 22px 18px;
+    gap: 40px;
+    /* max-width: 50%; */
+  }
+  
+}
+@media screen and (max-width: 680px) {
+  .title {
+    font-size: 18px;
+    
+  }
+  .category {
+    /* max-width:500px; */
+    width: 100%;
+    /* padding: 10px; */
+    padding: 18px 45px;
+   }
+}
