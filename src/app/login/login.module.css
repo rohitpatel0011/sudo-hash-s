@@ -11,26 +11,8 @@
     padding: 0 2rem;
     margin: 0 auto;
   }
-  
-  .ion-logo-apple {
-    font-size: 1.65rem;
-    line-height: inherit;
-    margin-right: 0.5rem;
-    color: var(--color-black);
-  }
-  .ion-logo-google {
-    font-size: 1.65rem;
-    line-height: inherit;
-    margin-right: 0.5rem;
-    color: var(--color-red);
-  }
-  .ion-logo-facebook {
-    font-size: 1.65rem;
-    line-height: inherit;
-    margin-right: 0.5rem;
-    color: var(--color-blue);
-  }
-  
+
+
   .text {
     font-family: inherit;
     line-height: inherit;
@@ -55,7 +37,7 @@
   .textlinks:hover {
     text-decoration: underline;
   }
-  
+
   .wrapper {
     max-width: 28rem;
     width: 100%;
@@ -145,6 +127,7 @@
     margin-bottom: 1rem;
     font-family: inherit;
     font-size: 0.95rem;
+    cursor: pointer;
     font-weight: 500;
     line-height: inherit;
     display: flex;
@@ -177,15 +160,38 @@
 
     color: rgb(233, 233, 233);
   }
-
-
-  .methodaction:hover {
-    background: gray;
+  .loadingContainer{
+     display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin: 200px;
+       height: 75vh;
+      padding: 10px;
+      gap: 50px;
+  }
+  .loadingContainer p{
+    font-size: 24px;
   }
 
+.loading{
+    width: 48px;
+    height: 48px;
+    border: 5px solid var(--softTextColor);
+    border-bottom-color: var(--mainColor);
+    border-radius: 50%;
+   text-align: center;
+    display: inline-block;
+    animation: rotation 1s linear infinite;
+    -webkit-animation: rotation 1s linear infinite;
+}
+ @keyframes rotation {
+    0% { transform: rotate(0deg) }
+    100% { transform: rotate(360deg) }
+  }
   @media screen and (max-width:1280px) {
     .container{
            padding: 0;
     }
-    
+
   }

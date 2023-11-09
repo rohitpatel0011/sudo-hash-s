@@ -10,28 +10,16 @@
   justify-content: space-evenly;
   gap: 20px;
   flex-wrap: wrap;
-  /* padding: 1.3rem; */
 
-  /* margin: -50px; */
 }
-/* .category.coding{
-  background: #57c4ff31;
+
+.image{
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
-.category.culture{
-  background: #57c4ff31;
-}
-.category.fashion{
-  background: #57c4ff31;
-}
-.category.food{
-  background: #57c4ff31;
-}
-.category.travel{
-  background: #57c4ff31;
-}
-.category.style{
-  background: #57c4ff31;
-} */
 .category {
   display: flex;
   align-items: center;
@@ -50,13 +38,17 @@
   );
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
 
- 
+
   background-color: var(--bg);
 }
+
 .category:hover {
   box-shadow:
 var(--hoverShadow);
 
+}
+.category ion-icon {
+  color:var(--textColor);
 }
 
 @media screen and (max-width: 1284px) {
@@ -91,12 +83,12 @@ var(--hoverShadow);
     gap: 40px;
     /* max-width: 50%; */
   }
-  
+
 }
 @media screen and (max-width: 680px) {
   .title {
     font-size: 18px;
-    
+
   }
   .category {
     /* max-width:500px; */

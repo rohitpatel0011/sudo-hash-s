@@ -1,12 +1,25 @@
+"use client";
 import React from "react";
 import styles from "./login.module.css";
 import Link from "next/link";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-
+import { signIn, useSession } from "next-auth/react";
+import { useRouter } from "next/navigation";
 
 const LoginPage = () => {
+  const { status } = useSession();
+  const router = useRouter();
+  if (status === "loading") {
+    return (
+      <div className={styles.loadingContainer}>
+        <div className={styles.loading}></div>
+        <p>Loading...!</p>
+      </div>
+    );
+  }
 
+  if (status === "authenticated") {
+    router.push("/");
+  }
   return (
     <main className={styles.main}>
       <div className={styles.container}>
@@ -27,10 +40,10 @@ const LoginPage = () => {
           </div>
           <form name="login" className={styles.form}>
             <div className={styles.inputcontrol}>
-              <label for="email" class="input-label" hidden>
+              <label htmlFor="emailInput" class="input-label" hidden>
                 Email Address
               </label>
-        
+
               <input
                 type="email"
                 name="email"
@@ -39,7 +52,7 @@ const LoginPage = () => {
               />
             </div>
             <div className={styles.inputcontrol}>
-              <label for="password" class="input-label" hidden>
+              <label htmlFor="password" class="input-label" hidden>
                 Password
               </label>
               <input
@@ -50,7 +63,7 @@ const LoginPage = () => {
               />
             </div>
             <div className={styles.inputcontrol}>
-              <a href="#"     className={`${styles.text}  ${styles.textlinks}`}>
+              <a href="#" className={`${styles.text}  ${styles.textlinks}`}>
                 Forgot Password
               </a>
               <input
@@ -68,19 +81,25 @@ const LoginPage = () => {
             <span className={styles.stripedline}></span>
           </div>
           <div className={styles.method}>
-            <div className={styles.methodcontrol}>
-              <Link href="#" className={styles.methodaction} >      <i class="ion ion-logo-google"></i></Link>
-        
+            <div
+              className={styles.methodcontrol}
+              onClick={() => signIn("google")}>
+              <Link href="#" className={styles.methodaction}>
+                <ion-icon name="logo-google"></ion-icon>
+              </Link>
               <span>Sign in with Google</span>
             </div>
             <div className={styles.methodcontrol}>
-              <Link href="#" className={styles.methodaction} >   <i class="ion ion-logo-linkedin"></i></Link>
-           
+              <Link href="#" className={styles.methodaction}>
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </Link>
               <span>Sign in with Linkedin</span>
             </div>
             <div className={styles.methodcontrol}>
-              <Link href="#" className={styles.methodaction} > <i class="ion ion-logo-github" ></i></Link>
-             
+              <Link href="#" className={styles.methodaction}>
+                <ion-icon name="logo-github"></ion-icon>
+              </Link>
+
               <span>Sign in with Github</span>
             </div>
           </div>

@@ -8,7 +8,7 @@ const BlogPage = () => {
     <div className={styles.container}>
       <h1 className={styles.title}>style blog</h1>
       <div className={styles.content}>
-        <CardList />
+        <CardList /> 
         <Menu />
       </div>
     </div>

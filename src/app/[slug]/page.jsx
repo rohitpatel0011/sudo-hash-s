@@ -32,28 +32,6 @@ function SinglePage() {
       <div className={styles.content}>
         <div className={styles.post}>
           <div className={styles.descriptions}>
-            {/* <p className={styles.textContent}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-              debitis nam tempore ut enim, illo assumenda dignissimos autem
-              asperiores itaque! Quaerat tempora voluptatum suscipit ab culpa,
-              quis quam sunt odit!
-            </p>
-            <h2  className={styles.h2}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, rem.
-            </h2 >
-            <p className={styles.textContent}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-              debitis nam tempore ut enim, illo assumenda dignissimos autem
-              asperiores itaque! Quaerat tempora voluptatum suscipit ab culpa,
-              quis quam sunt odit!
-            </p>
-            <p className={styles.textContent}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-              debitis nam tempore ut enim, illo assumenda dignissimos autem
-              asperiores itaque! Quaerat tempora voluptatum suscipit ab culpa,
-              quis quam sunt odit!
-            </p> */}
-
             <article>
               <h2 className={styles.h2}>Basic block level elements</h2>
               <p className={styles.textContent}>
@@ -130,9 +108,9 @@ function SinglePage() {
                   it will probably wrap to the next line in rendering.
                 </li>
               </menu>
-              <p className={styles.textContent}> 
+              <p className={styles.textContent}>
                 The following is a <code>dir</code> list:
-              </p >
+              </p>
               <dir>
                 <li> One.</li>
                 <li> Two.</li>
@@ -142,7 +120,7 @@ function SinglePage() {
                   it will probably wrap to the next line in rendering.
                 </li>
               </dir>
-              <p  className={styles.textContent}>
+              <p className={styles.textContent}>
                 This is a paragraph before a <strong>numbered</strong> list (
                 <code>ol</code>). Note that the spacing between a paragraph and
                 a list before or after that is hard to tune in a user style
@@ -192,7 +170,7 @@ function SinglePage() {
               </dl>
             </article>
           </div>
-          <Comments/>
+          <Comments />
         </div>
         <Menu />
       </div>
