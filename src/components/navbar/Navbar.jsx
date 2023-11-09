@@ -18,10 +18,9 @@ const Navbar = () => {
       </div>
       <div className={styles.logo}>
         <section className={styles.logoContainer}>
-    
           <div className={styles.logo5}>
-            <Link href=""/>
-              <p className={styles.p}>superusers</p>
+            <Link href="" />
+            <p className={styles.p}>sudoHash's</p>
           </div>
         </section>
       </div>

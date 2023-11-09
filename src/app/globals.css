@@ -2,6 +2,7 @@
     --bg: rgb(255, 255, 255);
     --textColor: black;
     --mainColor: #7dbb01;
+
     --softBg: #f0f0f0;
     --softTextColor: #626262;
     --firstColor: #44AB96;
@@ -138,4 +139,5 @@ a {
 
 .ql-editor {
     margin-top: 48px;
+    background-color: transparent;
 }

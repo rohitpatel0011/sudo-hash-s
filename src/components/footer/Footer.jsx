@@ -7,22 +7,29 @@ const Footer = () => {
   return (
     <div className={styles.container}>
       <div className="info">
-    
-          <div className={styles.logo}>
-            <section className={styles.logoContainer}>
-              <div className={styles.logo5}>
-          
-                <p className={styles.p}>superuser's</p>
-              </div>
-            </section>
-          </div>
-       
+        <div className={styles.logo}>
+          <section className={styles.logoContainer}>
+            <div className={styles.logo5}>
+              <p className={styles.p}>sudoHash's</p>
+            </div>
+          </section>
+        </div>
+
         <p className={styles.desc}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe amet
-          libero ullam ea optio dicta qui vel inventore? Nobis commodi
-          voluptates necessitatibus, reprehenderit molestiae nam labore eligendi
-          cupiditate nequ  
-          repudiandae earum magni? Numquam, sunt!
+          Why Choose Us? User-Friendly Interface: Our website is designed with
+          you in mind. It's easy to navigate and explore. You'll find what
+          you're looking for without any hassle. Inclusive Community: We welcome
+          all levels of expertise. Whether you're a newbie or a tech pro, you'll
+          find value in our community. Engaging Content: Our articles are
+          written to be both informative and accessible. We break down complex
+          topics into simple, easy-to-understand language. Constant Learning:
+          Technology is ever-evolving, and we're committed to keeping you
+          up-to-date with the latest trends and skills. Join Us Today Don't miss
+          out on the opportunity to connect with a vibrant tech community,
+          expand your knowledge, and engage with exciting topics. Join us today
+          and be a part of our tech journey. Get Started Now (Button to join or
+          sign up) Feel free to customize this text to match the style and
+          branding of your website.
         </p>
         <div className={styles.icons}>
           <Image src="/facebook.png" alt="facebook" width={18} height={18} />
